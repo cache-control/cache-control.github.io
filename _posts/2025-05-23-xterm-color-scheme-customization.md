@@ -52,7 +52,7 @@ resources.
 Load $HOME/.Xdefaults into the root window when an x session starts up.
 
 * $HOME/.icewm/startup
-  ```
+  ```sh
   xrdb -load $HOME/.Xdefaults
   ```
 
@@ -63,7 +63,7 @@ but of course change it to fit your taste.  Be sure to create the
 directory if it doesn't already exist.
 
 * $HOME/.icewm/env
-  ```
+  ```sh
   XENVIRONMENT=/dev/null
   XUSERFILESEARCHPATH=$HOME/X11/XAPPLRESDIR/%N%C:$HOME/X11/XAPPLRESDIR/%N
   ```
@@ -101,7 +101,7 @@ Description of these two variables from x man page:
   %c => the locale's encoding (part after '.')
   ```
 
-### Create color scheme profiles
+### Create color scheme files
 A large collection of color schemes/themes can be found here.
 ```
 https://github.com/janoamaral/Xresources-themes
