@@ -2,33 +2,33 @@
 title: "XTerm color scheme customization"
 date: 2025-05-23
 ---
-# Introduction
+## Introduction
 This post shows how to implement color schemes for XTerm.  The schemes
 can then be selected with the `customization` resource.  This is an
 efficient method to support a large number of color schemes.
 
-# Requirements
+## Requirements
 * cpp: GNU C preprocessor
-  ```
+  ```sh
   sudo apt install cpp
   ```
 * curl: command line tool for transferring data with URL syntax
-  ```
+  ```sh
   sudo apt install curl
   ```
 
-# Setup
+## Setup
 The setup steps that follow will use scripts and configuration files
 that are specific to the `IceWM` window manager. It should not be
 difficult to adapt to other environments.
 
-## Load .Xdefaults
+### Load .Xdefaults
 In .Xdefaults (or .Xresources), define *base* parameters that all XTerm
 instances should share.  But resources related to colors must **not** be
 included.  For example, a .Xdefaults file might include some of these
 resources.
 
-* `$HOME/.Xdefaults`
+* $HOME/.Xdefaults
   ```
   XTerm*termName: xterm-256color
   XTerm*eightBitInput: false
@@ -51,18 +51,18 @@ resources.
 
 Load $HOME/.Xdefaults into the root window when an x session starts up.
 
-* `$HOME/.icewm/startup`
+* $HOME/.icewm/startup
   ```
   xrdb -load $HOME/.Xdefaults
   ```
 
-## Override environment variables
+### Override environment variables
 Override these two environment variables when an x session begins.  Only
 XUSERFILESEARCHPATH is required.  The example uses $HOME/X11/XAPPLRESDIR
 but of course change it to fit your taste.  Be sure to create the
 directory if it doesn't already exist.
 
-* `$HOME/.icewm/env`
+* $HOME/.icewm/env
   ```
   XENVIRONMENT=/dev/null
   XUSERFILESEARCHPATH=$HOME/X11/XAPPLRESDIR/%N%C:$HOME/X11/XAPPLRESDIR/%N
@@ -101,7 +101,7 @@ Description of these two variables from x man page:
   %c => the locale's encoding (part after '.')
   ```
 
-## Create color scheme profiles
+### Create color scheme profiles
 A large collection of color schemes/themes can be found here.
 ```
 https://github.com/janoamaral/Xresources-themes
@@ -153,21 +153,21 @@ $HOME/X11/XAPPLRESDIR/XTerm-iterm-Mathias
 $HOME/X11/XAPPLRESDIR/XTerm-base16-phd-256
 ```
 
-## Restart x session
+### Restart x session
 Restart the x session or reboot.  It is important that the environment
 variables are set and that the root window does not store any XTerm
 resource related to colors.
 
-# Usage
+## Usage
 * To use the default theme (ex: *base16-phd-256*)
-  ```
+  ```sh
   xterm
   ```
 * To use the *iterm-Novel* theme
-  ```
+  ```sh
   xterm -xrm '*customization:-iterm-Novel'
   ```
 * To use the *iterm-Mathias* theme
-  ```
+  ```sh
   xterm -xrm '*customization:-iterm-Mathias'
   ```
