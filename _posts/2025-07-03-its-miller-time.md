@@ -116,3 +116,6 @@ $ curl -s https://microsoftedge.github.io/Demos/json-dummy-data/64KB.json \
 Where
 * `--barred`: draw borders
 * `stats1 -a min,max,mean,p95 -f version`: compute *min,max,mean,p95* on field *version*
+
+The result is, of course, meaningless, but I wanted to demonstrate the
+use of the `stats1` command.
