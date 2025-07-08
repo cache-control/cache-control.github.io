@@ -4,7 +4,7 @@ date: 2025-07-03
 ---
 ## Introduction
 Linux provides a powerful environment for data parsing and analysis.
-Command-line tools like 'awk', 'sed', and 'jq' are especially useful for
+Command-line tools like `awk`, `sed`, and `jq` are especially useful for
 transforming raw data into more structured, readable formats, making it
 easier to process and consume.
 
