@@ -13,9 +13,7 @@ data formats like CSV and JSON. According to its GitHub repository, it's
 described as:
 
 <https://github.com/johnkerl/miller>
-```
-Miller is like awk, sed, cut, join, and sort for data formats such as CSV, TSV, JSON, JSON Lines, and positionally-indexed.
-```
+> Miller is like awk, sed, cut, join, and sort for data formats such as CSV, TSV, JSON, JSON Lines, and positionally-indexed.
 
 Miller is a powerful tool that simplifies data analysis with its
 intuitive domain-specific language (DSL). Be sure to check out the
