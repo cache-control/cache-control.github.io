@@ -1,4 +1,4 @@
-## A collection of my projects.
+**A collection of my projects.**
 
 * recreation.gov CLI: [recgov](https://github.com/cache-control/recgov)
     * Bash script wrapper around recreation.gov API.
