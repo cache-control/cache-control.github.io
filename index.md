@@ -5,8 +5,6 @@
 * recreation.gov SPA: [recgov-spa](https://github.com/cache-control/recgov-spa)
     * React/Next.js app for users to find available campsites on recreation.gov
     * Demo at <https://recgov.vercel.app/>
-* Zygote Term: [ZygoteTerm](https://github.com/cache-control/ZygoteTerm)
-    * BBS program written in Pascal
 * ESP8266 temperature report: [esp8266-temp](https://github.com/cache-control/esp8266-temp)
     * IOT project that uses ESP8266 chip to report temperature measurements.
     * Uses arduino IDE and MQTT
